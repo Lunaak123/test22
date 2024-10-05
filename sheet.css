@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e3f2fd; /* Light Blue background */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full height for the body */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+    max-width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    padding: 10px; /* Adjusted padding */
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: #1565c0; /* Dark blue color */
+    font-size: 20px; /* Reduced font size */
+}
+
+.input-group {
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    align-items: center;
+    margin-bottom: 5px; /* Reduced margin for tighter layout */
+}
+
+input[type="text"],
+select {
+    width: 20%; /* Reduced width of text boxes */
+    padding: 3px; /* Reduced padding */
+    font-size: 12px; /* Reduced font size */
+    border-radius: 5px;
+    border: 1px solid #1565c0; /* Dark blue border */
+}
+
+button {
+    padding: 6px 10px; /* Adjusted padding */
+    font-size: 12px; /* Slightly smaller font */
+    background-color: #1565c0; /* Dark blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d47a1; /* Darker blue on hover */
+}
+
+.operations-panel {
+    height: 120px; /* Reduced height of the operational panel */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.sheet-content {
+    margin-top: 10px; /* Reduced margin to give more space */
+    overflow-x: auto;
+    background-color: #ffffff; /* White background for content */
+    padding: 10px; /* Reduced padding */
+    border-radius: 10px;
+    border: 1px solid #ddd; /* Light border */
+    flex-grow: 1; /* Allow this area to grow and fill space */
+}
+
+/* Styles to mimic Excel sheet look */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+
+table, th, td {
+    border: 1px solid #999; /* Light gray borders to look like Excel cells */
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f0f0f0; /* Light gray background for header row */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light alternate row coloring */
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* Could be more or less, depending on screen size */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+label {
+    margin-bottom: 3px; /* Space below labels */
+    display: block; /* Ensure labels are block elements */
+}
+
+/* Operation Group for side-by-side layout */
+.operation-group {
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the left */
+}
+
+/* Download Section Styles */
+.download-section {
+    display: flex; /* Flexbox layout */
+    justify-content: flex-end; /* Aligns buttons to the right */
+    margin-top: 10px; /* Space above the section */
+    margin-right: 5px; /* Added margin for better alignment */
+}
+
+#download-button, #print-button {
+    margin-left: 5px; /* Space between buttons */
+}
